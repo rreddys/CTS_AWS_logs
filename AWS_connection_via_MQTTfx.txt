@@ -1,0 +1,205 @@
+ernal.SSLNetworkModule.start(SSLNetworkModule.java:108) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:701) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	... 7 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source) ~[?:1.8.0_162]
+	at java.security.cert.CertPathBuilder.build(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.Validator.validate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.process_record(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule.start(SSLNetworkModule.java:108) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:701) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	... 7 more
+2019-05-28 17:09:15,697  INFO --- ScriptsController              : Clear console.
+2019-05-28 17:09:15,697 ERROR --- BrokerConnectService           : MqttException
+2019-05-28 17:09:51,841  INFO --- BrokerConnectorController      : onConnect
+2019-05-28 17:09:51,844  INFO --- ScriptsController              : Clear console.
+2019-05-28 17:09:51,911  INFO --- MqttFX ClientModel             : MqttClient with ID 8b0b2c81c45245eaab9c1d6323ea2488 assigned.
+2019-05-28 17:15:06,600  INFO --- SubscribeController            : onSubscribe
+2019-05-28 17:15:06,999  INFO --- MqttFX ClientModel             : rebuildMessagesList()
+2019-05-28 17:15:07,071  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:15:07,144  INFO --- MqttFX ClientModel             : attempt to addRecentSubscriptionTopic
+2019-05-28 17:15:07,145  INFO --- MqttFX ClientModel             : addRecentSubscriptionTopic : de.jensd.mqttfx.entities.Topic@bfdfa77
+2019-05-28 17:15:07,146  INFO --- MqttFX ClientModel             : attempt to add PublishTopic
+2019-05-28 17:15:07,164  INFO --- MqttFX ClientModel             : addPublishTopic : channels/767587/subscribe/json
+2019-05-28 17:15:07,188  INFO --- MqttFX ClientModel             : sucessfully subscribed to topic channels/767587/subscribe/json (QoS 0)
+2019-05-28 17:15:07,819  INFO --- MqttFX ClientModel             : messageArrived() added: message #1 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:15:10,706  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:15:10,710  INFO --- MqttFX ClientModel             : messageArrived() added: message #2 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:15:25,481  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:15:25,483  INFO --- MqttFX ClientModel             : messageArrived() added: message #3 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:15:42,141  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:15:42,142  INFO --- MqttFX ClientModel             : messageArrived() added: message #4 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:15:58,579  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:15:58,582  INFO --- MqttFX ClientModel             : messageArrived() added: message #5 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:16:16,705  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:16:16,706  INFO --- MqttFX ClientModel             : messageArrived() added: message #6 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:16:32,152  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:16:32,153  INFO --- MqttFX ClientModel             : messageArrived() added: message #7 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:16:48,382  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:16:48,390  INFO --- MqttFX ClientModel             : messageArrived() added: message #8 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:17:04,069  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:17:04,070  INFO --- MqttFX ClientModel             : messageArrived() added: message #9 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:17:21,025  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:17:21,026  INFO --- MqttFX ClientModel             : messageArrived() added: message #10 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:17:37,340  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:17:37,343  INFO --- MqttFX ClientModel             : messageArrived() added: message #11 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:17:53,904  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:17:53,915  INFO --- MqttFX ClientModel             : messageArrived() added: message #12 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:18:11,625  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:18:11,627  INFO --- MqttFX ClientModel             : messageArrived() added: message #13 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:18:29,762  INFO --- MqttFX ClientModel             : messageArrived() with topic: channels/767587/subscribe/json
+2019-05-28 17:18:29,763  INFO --- MqttFX ClientModel             : messageArrived() added: message #14 to topic 'channels/767587/subscribe/json'
+2019-05-28 17:18:40,238  INFO --- MqttFX ClientModel             : Broker connection lost: Resetting client.
+2019-05-28 17:18:40,250  INFO --- ScriptsController              : Clear console.
+2019-05-28 17:18:40,251  INFO --- MqttFX ClientModel             : rebuildMessagesList()
+2019-05-28 17:18:40,255  INFO --- ScriptsController              : Clear console.
+2019-05-28 19:04:19,400  INFO --- BrokerConnectorController      : onConnect
+2019-05-28 19:04:19,464  INFO --- ScriptsController              : Clear console.
+2019-05-28 19:04:19,476  INFO --- MqttFX ClientModel             : MqttClient with ID d05bad997ac9471eb945a2a6fc03991e assigned.
+2019-05-28 19:04:43,677 ERROR --- MqttFX ClientModel             : Error when connecting
+org.eclipse.paho.client.mqttv3.MqttException: MqttException
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:38) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:715) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_162]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_162]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) ~[?:1.8.0_162]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_162]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_162]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_162]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_162]
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.process_record(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule.start(SSLNetworkModule.java:108) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:701) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	... 7 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.Validator.validate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.process_record(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule.start(SSLNetworkModule.java:108) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:701) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	... 7 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source) ~[?:1.8.0_162]
+	at java.security.cert.CertPathBuilder.build(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.Validator.validate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.process_record(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule.start(SSLNetworkModule.java:108) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:701) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	... 7 more
+2019-05-28 19:04:43,784 ERROR --- MqttFX ClientModel             : Please verify your Settings (e.g. Broker Address, Broker Port & Client ID) and the user credentials!
+org.eclipse.paho.client.mqttv3.MqttException: MqttException
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:38) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:715) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_162]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_162]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(Unknown Source) ~[?:1.8.0_162]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[?:1.8.0_162]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [?:1.8.0_162]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [?:1.8.0_162]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_162]
+Caused by: javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.fatal(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.fatalSE(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.process_record(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule.start(SSLNetworkModule.java:108) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:701) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	... 7 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.Validator.validate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.process_record(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule.start(SSLNetworkModule.java:108) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:701) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	... 7 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source) ~[?:1.8.0_162]
+	at java.security.cert.CertPathBuilder.build(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.PKIXValidator.doBuild(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.PKIXValidator.engineValidate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.validator.Validator.validate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.validate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.serverCertificate(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.ClientHandshaker.processMessage(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.processLoop(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.Handshaker.process_record(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.readRecord(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at sun.security.ssl.SSLSocketImpl.startHandshake(Unknown Source) ~[?:1.8.0_162]
+	at org.eclipse.paho.client.mqttv3.internal.SSLNetworkModule.start(SSLNetworkModule.java:108) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:701) ~[org.eclipse.paho.client.mqttv3-1.2.0.jar:?]
+	... 7 more
+2019-05-28 19:04:43,837  INFO --- ScriptsController              : Clear console.
+2019-05-28 19:04:43,839 ERROR --- BrokerConnectService           : MqttException
